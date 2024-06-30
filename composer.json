@@ -1,0 +1,30 @@
+{
+    "name": "ig/utilities",
+    "description": "Collection of utility code/libraries for use with WordPress plugins/themes.",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "keywords":["wordpress", "wp", "utilities", "igeek", "ig", "ig-utilities"],
+    "authors": [
+        {
+            "name": "iGeek.info",
+            "homepage": "https://igeek.info/",
+            "role": "developer"
+        },
+        {
+            "name": "Amit Gupta",
+            "homepage": "https://amitgupta.in/",
+            "role": "developer"
+        }
+    ],
+	"homepage": "https://github.com/coolamit/ig-utilities",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "files": ["ig-utilities.php"]
+    },
+    "support": {
+        "issues": "https://github.com/coolamit/ig-utilities/issues",
+        "source": "https://github.com/coolamit/ig-utilities"
+    }
+}
