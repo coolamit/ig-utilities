@@ -29,14 +29,10 @@ This is a `composer` package and to use it, you should install `composer` and fe
 
 Once you have `composer` installed, run the following command in your project directory.
 
-```  
-composer require ig/utilities  
-```  
-
+``` composer require igeek/utilities    
+```   
 Once the package is installed, put the following in your project code before you use any of the package API. If you are not adding this in a file which resides in the same directory as your `composer.json` file or `vendor` directory then adjust the path below accordingly.
 
-```php  
-require_once __DIR__ . '/vendor/autoload.php';  
-```  
-
+```php require_once __DIR__ . '/vendor/autoload.php';    
+```   
 This will allow you to use this package's API (& that of any other `composer` package you install) without bothering about loading up package files.

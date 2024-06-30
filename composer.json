@@ -1,5 +1,5 @@
 {
-    "name": "ig/utilities",
+    "name": "igeek/utilities",
     "description": "Collection of utility code/libraries for use with WordPress plugins/themes.",
     "type": "library",
     "license": "GPL-2.0-or-later",
