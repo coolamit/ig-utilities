@@ -1,16 +1,19 @@
-# `ig-utilities`
+# `igeek/utilities`
 
-## class `Cache`
+## `Cache` Class
 
 The `Cache` class is used as a utility driver with the `iG` class to provide an enhanced API for managing data caching in WordPress, allowing for automatic cache management and data retrieval with failover mechanisms.
 
 This class uses `wp_cache` functions behind the scenes and automatically takes care of quicker updates on failures, expiry time collisions, etc. `wp_cache` must be set up and configured for use before this class can be used. This class does not provide a caching mechanism of its own.
 
-### `get_instance( string $key, string $group = '' )`
+### Available Methods
+- [`get_instance()`](#get_instance-string-key-string-group---)
+- [`expires_in()`](#expires_in-int-expiry---static)
+- [`on_failure_expires_in()`](#on_failure_expires_in-int-expiry---static)
+- [`updates_with()`](#updates_with-callable-callback-parameters---static)
+- [`get()`](#get--mixed)
+- [`delete()`](#delete--static)
 
-This method is available on the `Cache` class to get an instance of it. Since this class uses the `Factory` trait, using this method returns a new object of the class every time this method is called.
-
-This method accepts 2 parameters: a unique key as a string to identify cache instance and a cache group name as a string. The cache group name is optional, if it is not passed then the `Cache` class uses its default group.
 
 ### Usage
 
@@ -105,6 +108,12 @@ class Postcards {
 
 }
 ```
+
+### `get_instance( string $key, string $group = '' )`
+
+This method is available on the `Cache` class to get an instance of it. Since this class uses the [`Factory`](traits/factory.md) trait, using this method returns a new object of the class every time this method is called.
+
+This method accepts 2 parameters: a unique key as a string to identify cache instance and a cache group name as a string. The cache group name is optional, if it is not passed then the `Cache` class uses its default group.
 
 ### `expires_in( int $expiry ) : static`
 

@@ -1,6 +1,6 @@
-# `ig-utilities`
+# `igeek/utilities`
 
-## trait `Singleton`
+## `Singleton` Trait
 
 The `Singleton` trait provides an easy and quick way to make any class a [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern). This is useful in WordPress where you might need to use methods of a class in multiple places but do not want to create objects of that class multiple times as it performs certain actions on instantiation which you do not want to do more than once.
 

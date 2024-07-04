@@ -1,12 +1,12 @@
-# `ig-utilities`
+# `igeek/utilities`
 
-## class `Input`
+## `Input` Class
 
 The `Input` class is used as a utility driver with the `iG` class to provide utilities when working with data input from a post request or URL query-string or fetching a value from Server or Environment vars. It can be used directly on its own as well.
 
-### `get_instance()`
+### Available Methods
+- [`get_instance()`](#get_instance)
 
-`Input::get_instance()` method is available on the class since it uses the `Singleton` trait. This method returns a `Singleton` object of this class.
 
 ### Usage
 
@@ -48,3 +48,8 @@ If you are a purist and do not want to use the syntactical sugar, then you can a
 $post_id = Input::get_instance()->filter( INPUT_GET, 'post_id', FILTER_SANITIZE_NUMBER_INT )
 ```
 The `Input::filter()` method here is a drop-in replacement for PHP's `filter_input()` with same signature.
+
+### `get_instance()`
+
+`get_instance()` method is available on the class since it uses the `Singleton` trait. This method returns a `Singleton` object of this class.
+

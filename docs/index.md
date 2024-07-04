@@ -1,8 +1,8 @@
-# `ig-utilities` Usage
+# `igeek/utilities` Usage
 
 - Main
 	- [`Autoloader`](classes/autoloader.md)
-	- [`iG`](classes/ig)
+	- [`iG`](classes/ig.md)
 - Utility Drivers
 	- [`Arrays`](classes/arrays.md)
 	- [`Cache`](classes/cache.md)

@@ -1,8 +1,13 @@
-# `ig-utilities`
+# `igeek/utilities`
 
-## interface `Utility_Driver`
+## `Utility_Driver` Interface
 
-The `Utility_Driver` interface contains signatures for two methods which must be defined in a class implementing this interface. This interface is required for a class which is to be registered as a utility driver for the [`iG`](../ig) class.
+The `Utility_Driver` interface contains signatures for two methods which must be defined in a class implementing this interface. This interface is required for a class which is to be registered as a utility driver with the [`iG`](../ig) class.
+
+### Available Methods
+- [`get_driver_name()`](#public-static-function-get_driver_name--string)
+- [`get_instance()`](#public-static-function-get_instance--object)
+
 
 ### `public static function get_driver_name() : string`
 

@@ -1,6 +1,6 @@
-# `ig-utilities`
+# `igeek/utilities`
 
-## class `Autoloader`
+## `Autoloader` Class
 
 The `Autoloader` class provides the ability to register any namespace and map it to a directory. It has a specific pattern it follows for file naming and directory structure. It is not PSR compliant; we follow [WordPress coding standards](https://make.wordpress.org/core/handbook/coding-standards/).
 

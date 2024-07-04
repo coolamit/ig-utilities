@@ -1,16 +1,25 @@
-# `ig-utilities`
+# `igeek/utilities`
 
-## class `Strings`
+## `Strings` Class
 
 The `Strings` class is used as a utility driver with the `iG` class to provide utilities when working with data of `string` type. It can be used directly on its own as well.
 
+### Available Methods
+- [`get_instance()`](#get_instance)
+- [`unleadingslashit()`](#unleadingslashit-string--txt---string)
+- [`is_name()`](#is_name-string--txt---bool)
+- [`search_replace()`](#search_replace-search-replace-string--subject---string)
+- [`get_word_count()`](#get_word_count-string--txt---int)
+- [`get_minutes_to_read()`](#get_minutes_to_read-string--txt-int--words_per_minute--200---int)
+
+
 ### `get_instance()`
 
-`Strings::get_instance()` method is available on the class since it uses the `Singleton` trait. This method returns a `Singleton` object of this class.
+`get_instance()` method is available on the class since it uses the `Singleton` trait. This method returns a `Singleton` object of this class.
 
 ### `unleadingslashit( string  $txt ) : string`
 
-This method is similar to the [`untrailingslashit()`](https://developer.wordpress.org/reference/functions/untrailingslashit/) in WordPress. The method from WP removes trailing slash from a string and `Strings::unleadingslashit()` removes the leading slashes from a string.
+This method is similar to the [`untrailingslashit()`](https://developer.wordpress.org/reference/functions/untrailingslashit/) in WordPress. The method from WP removes trailing slash from a string and `unleadingslashit()` removes the leading slashes from a string.
 
 ### `is_name( string  $txt ) : bool`
 

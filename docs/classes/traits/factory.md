@@ -1,6 +1,6 @@
-# `ig-utilities`
+# `igeek/utilities`
 
-## trait `Factory`
+## `Factory` Trait
 
 The `Factory` trait provides an easy and quick way to implement [Factory method pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) in a class. This is useful in WordPress where a class object has to be created programmatically without specifying the `new` keyword or class name every time. Using this pattern on a class provides a method on that class which returns a new object of the class every time it is called.
 

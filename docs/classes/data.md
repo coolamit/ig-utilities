@@ -1,8 +1,13 @@
-# `ig-utilities`
+# `igeek/utilities`
 
-## class `Data`
+## `Data` Class
 
 The `Data` class is used as a utility driver with the `iG` class to provide utilities when working with data of multiple types. It can be used directly on its own as well.
+
+### Available Methods
+- [`get_instance()`](#get_instance)
+- [`is_empty()`](#is_empty-mixed-value---bool)
+
 
 ### `get_instance()`
 
@@ -16,22 +21,22 @@ Also, unlike PHP's `empty()` function, `is_empty()` does not return `TRUE` if th
 
 Consider following examples
 
-```php  
-$a = "   \n";  // tab, space and new line  
-$b = '  abcd ';  
-$c = "  \xc2\xa0 \n";  // tab, unicode whitespace, space and new line  
-$d = "  संतरा \n";  // tab, multibyte string, space and new line  
+```php
+$a = "   \n";  // tab, space and new line
+$b = '  abcd ';
+$c = "  \xc2\xa0 \n";  // tab, unicode whitespace, space and new line
+$d = "  संतरा \n";  // tab, multibyte string, space and new line
 $e = '    '; // only white space
 $f = false; // boolean FALSE
 $g = 0; // numeric zero
-  
-var_dump( iG::data()->is_empty( $a ) );  // will return TRUE  
-var_dump( iG::data()->is_empty( $b ) );  // will return FALSE  
-var_dump( iG::data()->is_empty( $c ) );  // will return TRUE  
-var_dump( iG::data()->is_empty( $d ) );  // will return FALSE  
+
+var_dump( iG::data()->is_empty( $a ) );  // will return TRUE
+var_dump( iG::data()->is_empty( $b ) );  // will return FALSE
+var_dump( iG::data()->is_empty( $c ) );  // will return TRUE
+var_dump( iG::data()->is_empty( $d ) );  // will return FALSE
 var_dump( iG::data()->is_empty( $e ) );  // will return TRUE
 var_dump( iG::data()->is_empty( $f ) );  // will return FALSE
 var_dump( iG::data()->is_empty( $g ) );  // will return FALSE
-```  
+```
 
-This method takes care of unicode whitespace characters as well and works with multibyte strings too.  
+This method takes care of unicode whitespace characters as well and works with multibyte strings too.

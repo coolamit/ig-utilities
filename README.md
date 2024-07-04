@@ -1,14 +1,14 @@
-# ig-utilities
+# igeek/utilities
 
 ## Introduction
 
-`ig-utilities` is a collection of utility libraries helpful when working with WordPress. It is a fork of the `g3/utilities` package that I wrote. I'm not sure if that package will be maintained anymore but going forward `ig-utilities` will be maintained by me.
+`igeek/utilities` is a collection of utilities helpful when writing code for WordPress. It is a fork of the `g3/utilities` package that I wrote in 2022. The future of that package is uncertain (I have no visibility regarding that). Going forward `igeek/utilities` will be maintained by me. Pull Requests, bug reports, feature requests are always welcome.
 
-On its own this package does not do anything, which is why this is not available as a WordPress plugin. It is meant to be used as a support/utility library for existing/new WordPress code, be it theme or plugin.
+On its own this package does not do anything; hence this is not available as a WordPress plugin. It is meant to be used as a support/utility library for existing/new WordPress code, be it theme or plugin.
 
-- [License](#License)
-- [Requirements](#Requirements)
-- [Installation](#Installation)
+- [License](#license)
+- [Requirements](#requirements)
+- [Installation](#installation)
 - [Usage](docs/index.md)
 
 
@@ -29,10 +29,13 @@ This is a `composer` package and to use it, you should install `composer` and fe
 
 Once you have `composer` installed, run the following command in your project directory.
 
-``` composer require igeek/utilities    
-```   
+```bash
+composer require igeek/utilities
+```
+
 Once the package is installed, put the following in your project code before you use any of the package API. If you are not adding this in a file which resides in the same directory as your `composer.json` file or `vendor` directory then adjust the path below accordingly.
 
-```php require_once __DIR__ . '/vendor/autoload.php';    
-```   
+```php
+require_once __DIR__ . '/vendor/autoload.php';
+```
 This will allow you to use this package's API (& that of any other `composer` package you install) without bothering about loading up package files.
